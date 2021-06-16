@@ -1,0 +1,17 @@
+{
+    "short_name": "Street Dogs",
+    "name": "Street Dogs",
+    "description": "These Photographs Are Not Important",
+    "start_url": "https://wiredogdesign.github.io/photo/",
+    "scope": "/photo",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "https://wiredogdesign.github.io/photo/apple-touch-icon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "background_color": "#EA1515",
+    "theme_color": "#CBCBCB"
+}
