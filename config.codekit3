@@ -59,6 +59,14 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/CNAME",
+		"oF": 0
+		},
 	"/dist/css/custom-min.css": {
 		"aP": 1,
 		"bl": 0,

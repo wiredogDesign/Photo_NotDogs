@@ -161,7 +161,6 @@ footer {
     overflow: hidden;
 	background: var(--grey-mid);
     color: var(--grey-dark);
-    cursor: pointer;
 }
 
 
