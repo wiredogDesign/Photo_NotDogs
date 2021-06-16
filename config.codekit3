@@ -198,6 +198,19 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/dist/img/large/demolition_reaction.jpg": {
+		"ft": 16384,
+		"iS": 79338,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/img/large/demolition_reaction.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/dist/img/large/demolition_triptych.jpg": {
 		"ft": 16384,
 		"iS": 131031,
@@ -516,6 +529,19 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/img/small/claire_cunningham.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/dist/img/small/demolition_reaction.jpg": {
+		"ft": 16384,
+		"iS": 25664,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/img/small/demolition_reaction.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
