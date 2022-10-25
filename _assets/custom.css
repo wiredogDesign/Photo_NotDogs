@@ -38,16 +38,18 @@ body {
 
 header {
     position: relative;
-    height: 8vh;
+    overflow: hidden;
+    border-radius: 0 0 1.5vw 1.5vw;
 }
 
 header::after {
 	position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 1vh;
+    right: 1vw;
     content: attr(data-image-counter);
-    font-size: 5vh;
+    font-size: 4vw;
     color: var(--limpid);
+text-shadow: 0px 3px 5px var(--black);
 }
 
 header img {
@@ -82,7 +84,7 @@ main {
 .thumbnail-trigger {
     flex: 1 0 auto;
     position: relative;
-    max-width: 50vw;
+    max-width: 33.3vw;
     height: 20.3vw;
     border-radius: .6vw;
     overflow: hidden;
@@ -136,6 +138,7 @@ footer {
     height: 4.35rem;
     /* margin-top: var(--margins); */
     overflow: hidden;
+    border-radius: 1.5vw 1.5vw 0 0;
 	background: var(--grey-mid);
     color: var(--grey-dark);
     cursor: pointer;
