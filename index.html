@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>These.Photographs.Are.Not.Important.Either</title>
+        <title>These.Photographs.Are.Equally.Not.Important</title>
         <link rel="stylesheet" href="dist/css/custom-min.css" />
-        <link rel="stylesheet" href="dist/css/fancybox-min.css" />
+        <link rel="stylesheet" href="dist/css/glightbox-min.css" />
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <script src="dist/js/yall-min.js"></script>
@@ -107,8 +107,20 @@
         <footer>
             <h3>global generosity by github ⦿ wavering willfulness by wiredog</h3>
         </footer>
-        <script src="dist/js/jquery-min.js"></script>
-        <script src="dist/js/fancybox-min.js"></script>
+        <script src="dist/js/glightbox-min.js"></script>
+
+        <script>
+            const lightbox = GLightbox({
+                touchNavigation: true,
+                keyboardNavigation: true,
+                loop: true,
+                selector: '.gallery a',
+                closeButton: true,
+                zoomable: true,
+                autoplayVideos: false
+            });
+        </script>
+
         <script src="dist/js/custom-min.js"></script>
     </body>
 </html>

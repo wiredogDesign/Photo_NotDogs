@@ -81,7 +81,7 @@
 
         .eye {
             fill: none;
-            stroke: black 
+            stroke: white 
         }
 
         .wiredog { 

@@ -1,9 +1,10 @@
-// get and display image count
-var images = $('.thumbnail-trigger').length
-$('.image-counter').text(images);
+var trigger = document.querySelector('footer');
+var info = document.querySelector('.info');
+var imageCount = document.querySelectorAll('.thumbnail-trigger').length-1 + " dogs + 1 cat";
+document.querySelector('header').setAttribute('data-image-counter', imageCount);
+//
+function toggleClass() {
+    info.classList.toggle('show-info');
+}
+trigger.addEventListener('click', toggleClass)
 
-
-$('footer').click(function (e) { 
-    // e.preventDefault();
-    $('.info').toggleClass('show-info');
-});
