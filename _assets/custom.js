@@ -1,6 +1,6 @@
 var trigger = document.querySelector('footer');
 var info = document.querySelector('.info');
-var imageCount = document.querySelectorAll('.thumbnail-trigger').length-1 + " dogs + 1 cat";
+var imageCount = document.querySelectorAll('.thumbnail-trigger').length-1 + " images of no consequence";
 document.querySelector('header').setAttribute('data-image-counter', imageCount);
 //
 function toggleClass() {

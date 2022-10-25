@@ -38,18 +38,16 @@ body {
 
 header {
     position: relative;
+    height: 8vh;
 }
 
 header::after {
 	position: absolute;
-	bottom: -0.2vh;
-	right: -0.5vw;
-	padding: 0 0.4em;
-    border-top-left-radius: 0.5vw;
+    top: 0;
+    right: 0;
     content: attr(data-image-counter);
-	font-size: 3vh;
-	color: var(--grey-mid);
-	background: var(--black);
+    font-size: 5vh;
+    color: var(--limpid);
 }
 
 header img {
@@ -63,7 +61,7 @@ a {
 
 h2  {
     width: 100vw;
-    color: var(--limpid);
+    color: var(--grey-mid);
 }
 
 h4 {
