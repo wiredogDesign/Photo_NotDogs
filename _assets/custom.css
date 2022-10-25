@@ -61,6 +61,11 @@ a {
     color: var(--red);
 }
 
+h2  {
+    width: 100vw;
+    color: var(--limpid);
+}
+
 h4 {
     font-variation-settings: "wght" 600;
 }
