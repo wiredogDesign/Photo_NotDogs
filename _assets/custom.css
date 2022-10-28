@@ -74,7 +74,7 @@ main {
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: var(--margins);
     min-height: 100vh;
     margin: var(--margins) 0;
@@ -176,7 +176,7 @@ footer {
 @media screen and (max-width: 660px) {
 
     .thumbnail-trigger { 
-        height: 20vh;
+        height: 23vw;
         border-radius: 2vw;
     }
 }
