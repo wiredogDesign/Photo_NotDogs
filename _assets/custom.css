@@ -75,7 +75,7 @@ h2 {
 	width: 100vw;
 	color: var(--red);
 	border-bottom: 0.1em solid var(--red);
-	padding-bottom: 0.2em;
+	padding: 0.6em 0 0.2em;
 }
 
 h4 {
@@ -86,7 +86,6 @@ main {
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
     gap: var(--margins);
     min-height: 100vh;
     margin: var(--margins) 0;
@@ -191,6 +190,11 @@ footer {
     transform: translateY(0);
 }
 
+.glightbox-mobile .glightbox-container .gslide-description h4 {
+    margin-bottom: 0.5em;
+    color: var(--red);
+}
+
 @media screen and (max-width: 660px) {
 
     header, 
@@ -207,9 +211,20 @@ footer {
         gap: calc(var(--margins)*2);
     }
 
+    p {
+        display: none;
+    }
+
     .thumbnail-trigger { 
-        height: 23vw;
+        height: 30vw;
         border-radius: 2vw;
+    }
+
+    .glightbox-mobile .glightbox-container .gslide-description {
+        /* max-height: 14vh !important; */
+        bottom: 40px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
     }
 }
 
