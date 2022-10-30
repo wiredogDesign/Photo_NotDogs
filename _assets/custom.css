@@ -190,8 +190,9 @@ footer {
     transform: translateY(0);
 }
 
-.glightbox-mobile .glightbox-container .gslide-description h4 {
+.glightbox-container .gslide-description h4 {
     margin-bottom: 0.5em;
+    font-size: 1.2em;
     color: var(--red);
 }
 
