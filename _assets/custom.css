@@ -37,32 +37,21 @@ body {
     background: var(--black);
 }
 
-header {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0 0 1.5vw 1.5vw;
-}
-
-header img {
-    width: 100%;
-    max-width: 900px;
-}
-
 a {
     color: var(--red);
 }
 
 h1 {
-	position: absolute;
-	bottom: 0.4em;
-	right: 0.4em;
+    position: absolute;
+    bottom: 0.4em;
+    right: 0.4em;
     font-size: 5vw;
     color: var(--limpid);
-	text-shadow: 0 3px 5px var(--black);
+    text-shadow: 0 3px 5px var(--black);
 }
 
 h1 span {
-	color: var(--red);
+    color: var(--red);
 }
 
 h1::before {
@@ -73,24 +62,39 @@ h1::before {
 }
 
 h2 {
-	width: 100vw;
-	color: var(--red);
-	border-bottom: 0.1em solid var(--red);
-	padding: 0.6em 0 0.2em;
+    width: 100vw;
+    color: var(--red);
+    border-bottom: 0.1em solid var(--red);
+    padding: 0.6em 0 0.2em;
 }
 
 h4 {
     font-variation-settings: "wght" 600;
 }
 
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 0 0 1.5vw 1.5vw;
+
+}
+
+
 main {
     position: relative;
+    min-height: 100vh;
+}
+
+section {
     display: flex;
     flex-flow: row wrap;
     gap: var(--margins);
-    min-height: 100vh;
     margin: var(--margins) 0;
-    background: var(--black);
 }
 
 .thumbnail-trigger {
@@ -198,6 +202,10 @@ footer {
 }
 
 @media screen and (max-width: 660px) {
+
+    body {
+        padding: 0;
+    }
 
     header, 
     footer {
