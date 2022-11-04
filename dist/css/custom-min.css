@@ -8,18 +8,6 @@
     --margins:      0.8vw;
 }
 
-@-webkit-keyframes turnhead {
-    100% {
-        transform: rotate(0);
-    }
-}
-
-@keyframes turnhead {
-    100% {
-        transform: rotate(0);
-    }
-}
-
 @font-face {
     font-family: "Dosis";
     src: url("../../dist/fonts/Dosis-VF.ttf");
@@ -49,8 +37,11 @@ a {
 
 h1 {
     position: absolute;
-    bottom: 0.4em;
-    right: 0.4em;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: rotate(-20deg);
+    transform-origin: 87% 180%;
     font-size: 5vw;
     color: var(--limpid);
     text-shadow: 0 3px 5px var(--black);
@@ -86,8 +77,14 @@ header {
 header img {
     width: 100%;
     max-width: 900px;
-    border-radius: 0 0 1.5vw 1.5vw;
+    border-radius: 10vw 0 10vw 1.5vw;
+    -webkit-clip-path: circle(22% at 22% 62%);
+    clip-path: circle(22% at 22% 62%);
+    transition: clip-path 1s ease;
+}
 
+header img:hover {
+    clip-path: circle(150% at 0 0);
 }
 
 
@@ -127,7 +124,6 @@ section {
 
 /* added individually to images */
 .align-img-bottom {
-	-o-object-position: bottom;
 	object-position: bottom;
 }
 
@@ -144,7 +140,6 @@ section {
 }
 
 .thumbnail-trigger.last-image > img {
-    -o-object-position: bottom right;
     object-position: bottom right;
 }
 
@@ -260,7 +255,6 @@ footer {
     }
 
     .thumbnail-trigger.last-image > img {
-        -o-object-position: bottom right;
         object-position: bottom right;
     }
 

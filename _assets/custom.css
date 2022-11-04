@@ -43,8 +43,11 @@ a {
 
 h1 {
     position: absolute;
-    bottom: 0.4em;
-    right: 0.4em;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: rotate(-20deg);
+    transform-origin: 87% 180%;
     font-size: 5vw;
     color: var(--limpid);
     text-shadow: 0 3px 5px var(--black);
@@ -80,8 +83,13 @@ header {
 header img {
     width: 100%;
     max-width: 900px;
-    border-radius: 0 0 1.5vw 1.5vw;
+    border-radius: 10vw 0 10vw 1.5vw;
+    clip-path: circle(22% at 22% 62%);
+    transition: clip-path 1s ease;
+}
 
+header img:hover {
+    clip-path: circle(150% at 0 0);
 }
 
 
