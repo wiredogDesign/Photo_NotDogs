@@ -85,7 +85,7 @@ header img {
     max-width: 900px;
     border-radius: 10vw 0 10vw 1.5vw;
     clip-path: circle(22% at 22% 62%);
-    transition: clip-path 1s ease;
+    transition: clip-path 0.7s cubic-bezier(1,0,0,1)
 }
 
 header img:hover {
