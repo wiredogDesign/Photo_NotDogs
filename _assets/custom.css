@@ -3,6 +3,7 @@
     --grey-mid:     hsl(0, 0%, 60%);
     --grey-dark:    hsl(0, 0%, 40%);
     --black:        hsl(0, 0%, 20%);
+    --blackest:     hsl(0, 0%, 0%);
     --shadow:       hsla(0, 0%, 27%, 0.35);
     --limpid:       hsla(0, 0%, 100%, 0.8);
     --margins:      0.8vw;
@@ -73,6 +74,7 @@ h2 {
 
 h4 {
     font-variation-settings: "wght" 600;
+    color: var(--red);
 }
 
 header {
@@ -92,6 +94,45 @@ header img:hover {
     clip-path: circle(150% at 0 0);
 }
 
+/* the background colour selector */
+
+input {
+	width: 1em;
+	height: 1em;
+    margin-left: 0.5em;
+	border: 1em solid currentColor;
+	padding: 0.5em;
+	border-radius: 17%;
+	appearance: none;
+}
+
+input:nth-of-type(1) {
+	border-color: var(--limpid);
+}
+
+input:nth-of-type(2) {
+	border-color: var(--grey-mid)
+}
+
+input:nth-of-type(3) {
+	border-color: var(--blackest);
+}
+
+input:checked {
+	background: var(--red);
+}
+
+label {
+    display: none;
+}
+
+.background-select {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* ------------------------------ */
 
 main {
     position: relative;
