@@ -107,15 +107,11 @@ input {
 }
 
 input:nth-of-type(1) {
-	border-color: var(--limpid);
+	border-color: white;
 }
 
 input:nth-of-type(2) {
-	border-color: var(--grey-mid)
-}
-
-input:nth-of-type(3) {
-	border-color: var(--blackest);
+	border-color: black;
 }
 
 input:checked {
