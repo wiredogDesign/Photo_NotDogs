@@ -42,27 +42,32 @@ a {
     color: var(--red);
 }
 
-h1 {
+header > h1 {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.1em;
+    right: 0.3em;
     z-index: 1;
-    transform: rotate(-20deg);
-    transform-origin: 87% 180%;
-    font-size: 5vw;
+    /* transform: rotate(-20deg);
+    transform-origin: 87% 180%; */
+    font-size: 7vw;
+    text-align: right;
+    line-height: 1;
+    font-variation-settings: "wght" 600;
     color: var(--limpid);
-    text-shadow: 0 3px 5px var(--black);
+    /* text-shadow: 0 3px 5px var(--black); */
 }
 
-h1 span {
+header > h1 span {
     color: var(--red);
+    font-variation-settings: "wght" 800;
+    
 }
 
-h1::before {
+header > h1::before {
     content: attr(data-image-counter);
     font-size: 6vw;
     color: var(--limpid);
-    text-shadow: 0px 3px 5px var(--black);
+    /* text-shadow: 0px 3px 5px var(--black); */
 }
 
 h2 {
@@ -80,13 +85,17 @@ h4 {
 header {
     position: relative;
     overflow: hidden;
+    background-color: var(--red);
+    /* background-size: 100%;
+    background-position: 0 0;
+    background-blend-mode: difference; */
 }
 
 header img {
+    display: block;
     width: 100%;
     max-width: 900px;
-    border-radius: 10vw 0 10vw 1.5vw;
-    clip-path: circle(22% at 22% 62%);
+    clip-path: circle(19% at 22% 59%);
     transition: clip-path 0.7s cubic-bezier(1,0,0,1)
 }
 
@@ -96,14 +105,22 @@ header img:hover {
 
 /* the background colour selector */
 
+.background-select {
+	position: absolute;
+	top: 0.5em;
+	right: 0;
+}
+
 input {
-	width: 1em;
-	height: 1em;
+	width: 0.6em;
+	height: 0.6em;
     margin-left: 0.5em;
-	border: 1em solid currentColor;
+	border: 0.7em solid currentColor;
 	padding: 0.5em;
 	border-radius: 17%;
+    background-color: var(--red);
 	appearance: none;
+    -webkit-appearance: none;
 }
 
 input:nth-of-type(1) {
@@ -114,19 +131,13 @@ input:nth-of-type(2) {
 	border-color: black;
 }
 
-input:checked {
+/* input:checked {
 	background: var(--red);
-}
+} */
 
-label {
+/* label {
     display: none;
-}
-
-.background-select {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
+} */
 
 /* ------------------------------ */
 
