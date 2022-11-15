@@ -1,9 +1,9 @@
 {
-    "short_name": "Street Dogs",
-    "name": "Street Dogs",
-    "description": "These Photographs Are Not Important",
-    "start_url": "https://wiredogdesign.github.io/photo/",
-    "scope": "/photo",
+    "short_name": "Not Dogs, But Still Street",
+    "name": "Not Dogs, But Still Street",
+    "description": "These Photographs Are Also Not Important",
+    "start_url": "https://wiredogdesign.github.io/PhotoB/",
+    "scope": "/PhotoB",
     "display": "standalone",
     "icons": [
         {
@@ -12,6 +12,6 @@
             "sizes": "512x512"
         }
     ],
-    "background_color": "#EA1515",
-    "theme_color": "#CBCBCB"
+    "background_color": "#bf4059",
+    "theme_color": "#bf4059"
 }
