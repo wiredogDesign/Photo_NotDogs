@@ -9,12 +9,6 @@
     --margins:      0.8vw;
 }
 
-@keyframes turnhead {
-    100% {
-        transform: rotate(0);
-    }
-}
-
 @font-face {
     font-family: "Dosis";
     src: url("../../dist/fonts/Dosis-VF.ttf");
@@ -47,27 +41,24 @@ header > h1 {
     top: 0.1em;
     right: 0.3em;
     z-index: 1;
-    /* transform: rotate(-20deg);
-    transform-origin: 87% 180%; */
-    font-size: 7vw;
+    font-size: clamp(2.5em, 5em, 7vw);
     text-align: right;
     line-height: 1;
     font-variation-settings: "wght" 600;
     color: var(--limpid);
-    /* text-shadow: 0 3px 5px var(--black); */
 }
 
 header > h1 span {
     color: var(--red);
+    font-size: inherit;
     font-variation-settings: "wght" 800;
     
 }
 
 header > h1::before {
     content: attr(data-image-counter);
-    font-size: 6vw;
+    font-size: inherit;
     color: var(--limpid);
-    /* text-shadow: 0px 3px 5px var(--black); */
 }
 
 h2 {
@@ -86,9 +77,6 @@ header {
     position: relative;
     overflow: hidden;
     background-color: var(--red);
-    /* background-size: 100%;
-    background-position: 0 0;
-    background-blend-mode: difference; */
 }
 
 header img {
@@ -96,7 +84,8 @@ header img {
     width: 100%;
     max-width: 900px;
     clip-path: circle(19% at 22% 59%);
-    transition: clip-path 0.7s cubic-bezier(1,0,0,1)
+    transition: clip-path 0.7s cubic-bezier(1,0,0,1);
+    cursor: pointer;
 }
 
 header img:hover {
@@ -121,6 +110,7 @@ input {
     background-color: var(--red);
 	appearance: none;
     -webkit-appearance: none;
+    cursor: pointer;
 }
 
 input:nth-of-type(1) {
