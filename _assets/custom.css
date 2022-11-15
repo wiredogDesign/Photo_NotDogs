@@ -41,7 +41,7 @@ header > h1 {
     top: 0.1em;
     right: 0.3em;
     z-index: 1;
-    font-size: clamp(2.5em, 5em, 7vw);
+    font-size: clamp(2em, 5em, 7vw);
     text-align: right;
     line-height: 1;
     font-variation-settings: "wght" 600;
