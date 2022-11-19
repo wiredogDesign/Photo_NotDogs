@@ -84,7 +84,7 @@ header img {
     width: 100%;
     max-width: 900px;
     clip-path: circle(19% at 22% 59%);
-    transition: clip-path 0.7s cubic-bezier(1,0,0,1);
+    transition: clip-path 0.7s cubic-bezier(.48,-0.32,.27,1.55);
     cursor: pointer;
 }
 
@@ -111,6 +111,11 @@ input {
 	appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
+    transition: border-radius .4s cubic-bezier(.68,-0.55,.54,2.67);
+}
+
+input:hover {
+    border-radius: 50%;
 }
 
 input:nth-of-type(1) {
@@ -206,7 +211,6 @@ footer {
     height: 4.35rem;
     /* margin-top: var(--margins); */
     overflow: hidden;
-    border-radius: 1.5vw 1.5vw 0 0;
 	background: var(--grey-mid);
     color: var(--grey-dark);
     cursor: pointer;
@@ -251,11 +255,6 @@ footer {
 
     body {
         padding: 0;
-    }
-
-    header, 
-    footer {
-        border-radius: 0;
     }
 
     footer {

@@ -122,6 +122,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/dist\/gfx\/headerimage_large.avif" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/gfx\/headerimage_large.avif",
+      "oF" : 0
+    },
     "\/dist\/gfx\/headerimage_large.jpg" : {
       "ft" : 16384,
       "iS" : 171506,
