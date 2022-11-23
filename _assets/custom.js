@@ -1,11 +1,11 @@
-var trigger = document.querySelector('footer');
-var info = document.querySelector('.info');
+var trigger = document.querySelector('header');
+var headerImg = document.querySelector('header img');
 var imageCount = document.querySelectorAll('.thumbnail-trigger').length-1;
 document.querySelector('h1').setAttribute('data-image-counter', imageCount);
 
 // show/hide info panel
 function toggleClass() {
-    info.classList.toggle('show-info');
+    headerImg.classList.toggle('show-full-header-image');
 }
 trigger.addEventListener('click', toggleClass)
 

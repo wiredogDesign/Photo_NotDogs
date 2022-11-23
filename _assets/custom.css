@@ -36,6 +36,24 @@ a {
     color: var(--red);
 }
 
+h2 {
+    width: 100vw;
+    color: var(--red);
+    border-bottom: 0.1em solid var(--red);
+    padding: 0.6em 0 0.2em;
+}
+
+h4 {
+    font-variation-settings: "wght" 600;
+    color: var(--red);
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--red);
+}
+
 header > h1 {
     position: absolute;
     top: 0.1em;
@@ -61,24 +79,6 @@ header > h1::before {
     color: var(--limpid);
 }
 
-h2 {
-    width: 100vw;
-    color: var(--red);
-    border-bottom: 0.1em solid var(--red);
-    padding: 0.6em 0 0.2em;
-}
-
-h4 {
-    font-variation-settings: "wght" 600;
-    color: var(--red);
-}
-
-header {
-    position: relative;
-    overflow: hidden;
-    background-color: var(--red);
-}
-
 header img {
     display: block;
     width: 100%;
@@ -88,8 +88,8 @@ header img {
     cursor: pointer;
 }
 
-header img:hover {
-    clip-path: circle(150% at 0 0);
+.show-full-header-image {
+    clip-path: circle(110% at 22% 59%);
 }
 
 /* the background colour selector */
@@ -126,14 +126,6 @@ input:nth-of-type(2) {
 	border-color: black;
 }
 
-/* input:checked {
-	background: var(--red);
-} */
-
-/* label {
-    display: none;
-} */
-
 /* ------------------------------ */
 
 main {
@@ -169,17 +161,6 @@ section {
     transition: filter .2s linear;
 }
 
-/* added individually to images */
-.align-img-bottom {
-	object-position: bottom;
-}
-
-.long {
-    max-width: fit-content;
-}
-
-/* --------------------------- */
-
 .thumbnail-trigger img:hover {
     filter: saturate(1);
 }
@@ -214,35 +195,6 @@ footer {
 	background: var(--grey-mid);
     color: var(--grey-dark);
     cursor: pointer;
-}
-
-.info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 0.7rem;
-    transform: translateY(100%);
-    transition: transform .5s ease;
-    background: var(--grey-mid);
-    background-blend-mode: screen;
-    font-size: clamp(12px, 2.3vh, 2.3rem);
-    color: var(--red);
-    text-shadow: 0 0 2px var(--black);
-}
-
-.info span {
-    padding-right: .1em;
-    color: var(--red);
-    font-size: 300%;
-    line-height: .1;
-    vertical-align: bottom;
-}
-
-.show-info {
-    transform: translateY(0);
 }
 
 .glightbox-container .gslide-description h4 {
