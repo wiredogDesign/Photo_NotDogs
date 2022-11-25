@@ -61,7 +61,7 @@ header > h1 {
     right: 0.3em;
     z-index: 1;
     font-family: "typewriter";
-    font-size: clamp(2em, 5em, 6vw);
+    font-size: clamp(2em, 4em, 6vw);
     text-align: right;
     line-height: 1;
     color: var(--limpid);
