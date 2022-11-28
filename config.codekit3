@@ -241,6 +241,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/dist\/img\/large\/claire_cunningham_poster.jpg" : {
+      "ft" : 16384,
+      "iS" : 210259,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/large\/claire_cunningham_poster.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/dist\/img\/large\/claire_cunningham.jpg" : {
       "ft" : 16384,
       "iS" : 48797,
@@ -988,6 +1001,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/img\/small\/bicycle.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/dist\/img\/small\/claire_cunningham_poster.jpg" : {
+      "ft" : 16384,
+      "iS" : 72702,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/small\/claire_cunningham_poster.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
