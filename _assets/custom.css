@@ -69,10 +69,10 @@ header > h1 {
 }
 
 header > h1 span {
+    font-size: 140%;
+    line-height: 0;
+    font-weight: bold;
     color: var(--red);
-    font-size: inherit;
-    font-variation-settings: "wght" 800;
-    
 }
 
 header > h1::before {
@@ -238,10 +238,16 @@ footer {
     }
 }
 
-@media screen and (max-width: 375px) and (orientation: portrait) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
 
     main:after {
         font-size: 1.3em;
+    }
+
+    header > h1 span {
+        font-size: inherit;
+        font-weight: bold;
+        color: var(--red);
     }
 
     .thumbnail-trigger {
