@@ -1,20 +1,21 @@
 var trigger = document.querySelector('header');
 var headerImg = document.querySelector('header img');
 var imageCount = document.querySelectorAll('.thumbnail-trigger').length-1;
+
+// set & update image count
 document.querySelector('h1').setAttribute('data-image-counter', imageCount);
 
-// show/hide info panel
-function toggleClass() {
+// show/hide header image
+toggleClass = () => {
     headerImg.classList.toggle('show-full-header-image');
 }
 trigger.addEventListener('click', toggleClass)
 
 
 // theme switcher
-
 document.querySelector('form').addEventListener('change', getCheckedValue)
-function getCheckedValue() { 
-    const checkedValue = document.querySelector('input:checked').value;
+getCheckedValue = () => { 
+    var checkedValue = document.querySelector('input:checked').value;
     document.body.style.backgroundColor = checkedValue;
     localStorage.setItem('body', checkedValue);
 
