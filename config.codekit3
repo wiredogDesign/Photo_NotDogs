@@ -1779,6 +1779,14 @@
       "oA" : 1,
       "oAP" : "\/manifest.webmanifest",
       "oF" : 1
+    },
+    "\/test_voiceover.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/test_voiceover.html",
+      "oF" : 1
     }
   },
   "hooks" : [
@@ -3516,7 +3524,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
+    "skippedFoldersString" : "\/storage\/framework\/sessions,node_modules,_logs,logs,log,.idea,_cache,cache,test_",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,
