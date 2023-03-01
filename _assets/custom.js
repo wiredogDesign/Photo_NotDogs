@@ -9,18 +9,15 @@ document.querySelector('h1').setAttribute('data-image-counter', imageCount);
 toggleClass = () => {
     headerImg.classList.toggle('show-full-header-image');
 }
-trigger.addEventListener('click', toggleClass)
+trigger.addEventListener('click', toggleClass);
 
 
 // theme switcher
-document.querySelector('form').addEventListener('change', getCheckedValue)
 getCheckedValue = () => { 
     var checkedValue = document.querySelector('input:checked').value;
     document.body.style.backgroundColor = checkedValue;
     localStorage.setItem('body', checkedValue);
-
 }
 var currentBackground = localStorage.getItem('body');
 document.body.style.backgroundColor = currentBackground;
-
-
+document.querySelector('form').addEventListener('change', getCheckedValue);

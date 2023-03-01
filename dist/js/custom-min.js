@@ -1,1 +1,23 @@
-var trigger=document.querySelector("header"),headerImg=document.querySelector("header img"),imageCount=document.querySelectorAll(".thumbnail-trigger").length-1;function toggleClass(){headerImg.classList.toggle("show-full-header-image")}function getCheckedValue(){const e=document.querySelector("input:checked").value;document.body.style.backgroundColor=e,localStorage.setItem("body",e)}document.querySelector("h1").setAttribute("data-image-counter",imageCount),trigger.addEventListener("click",toggleClass),document.querySelector("form").addEventListener("change",getCheckedValue);var currentBackground=localStorage.getItem("body");document.body.style.backgroundColor=currentBackground;
+var trigger = document.querySelector('header');
+var headerImg = document.querySelector('header img');
+var imageCount = document.querySelectorAll('.thumbnail-trigger').length-1;
+
+// set & update image count
+document.querySelector('h1').setAttribute('data-image-counter', imageCount);
+
+// show/hide header image
+toggleClass = () => {
+    headerImg.classList.toggle('show-full-header-image');
+}
+trigger.addEventListener('click', toggleClass);
+
+
+// theme switcher
+getCheckedValue = () => { 
+    var checkedValue = document.querySelector('input:checked').value;
+    document.body.style.backgroundColor = checkedValue;
+    localStorage.setItem('body', checkedValue);
+}
+var currentBackground = localStorage.getItem('body');
+document.body.style.backgroundColor = currentBackground;
+document.querySelector('form').addEventListener('change', getCheckedValue);
