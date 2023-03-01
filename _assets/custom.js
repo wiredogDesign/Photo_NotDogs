@@ -20,4 +20,4 @@ getCheckedValue = () => {
 }
 var currentBackground = localStorage.getItem('body');
 document.body.style.backgroundColor = currentBackground;
-document.querySelector('form').addEventListener('change', getCheckedValue);
+document.querySelector('form').addEventListener('change', getCheckedValue); // for some reason this statement was before the function
