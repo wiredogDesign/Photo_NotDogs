@@ -631,6 +631,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/dist\/img\/large\/dscf8072.jpg" : {
+      "ft" : 16384,
+      "iS" : 140022,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/large\/dscf8072.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/dist\/img\/large\/dscf8197.jpg" : {
       "ft" : 16384,
       "iS" : 55500,
@@ -1424,6 +1437,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/dist\/img\/small\/dscf8072.jpg" : {
+      "ft" : 16384,
+      "iS" : 58527,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/small\/dscf8072.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/dist\/img\/small\/dscf8197.jpg" : {
       "ft" : 16384,
       "iS" : 28249,
@@ -1761,6 +1787,17 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/dist\/js\/custom-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/dist\/js\/custom-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/dist\/js\/glightbox-min.js" : {
       "bF" : 0,
