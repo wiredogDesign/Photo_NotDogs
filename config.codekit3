@@ -10,15 +10,15 @@
   "creatorBuild" : "34510",
   "files" : {
     "\/_assets\/custom.css" : {
-      "aP" : 0,
+      "aP" : 1,
       "bl" : 0,
       "ci" : 0,
-      "co" : 1,
+      "co" : 0,
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/dist\/css\/custom-min.css",
-      "oF" : 2,
+      "oAP" : "\/_assets\/custom-min.css",
+      "oF" : 0,
       "pg" : 0
     },
     "\/_assets\/custom.js" : {
@@ -101,12 +101,12 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/dist\/fonts\/Typewriter.woff2" : {
+    "\/dist\/fonts\/typewriter.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dist\/fonts\/Typewriter.woff2",
+      "oAP" : "\/dist\/fonts\/typewriter.woff2",
       "oF" : 0
     },
     "\/dist\/gfx\/apple-touch-icon.png" : {
