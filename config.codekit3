@@ -27,9 +27,9 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/dist\/js\/custom-min.js",
-      "oF" : 2,
-      "sC" : 0,
+      "oAP" : "\/_assets\/custom-min.js",
+      "oF" : 0,
+      "sC" : 3,
       "tS" : 0
     },
     "\/.gitignore" : {
@@ -101,12 +101,12 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/dist\/fonts\/typewriter.woff2" : {
+    "\/dist\/fonts\/typed.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dist\/fonts\/typewriter.woff2",
+      "oAP" : "\/dist\/fonts\/typed.woff2",
       "oF" : 0
     },
     "\/dist\/gfx\/apple-touch-icon.png" : {
