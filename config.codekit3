@@ -13,7 +13,7 @@
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
-      "co" : 0,
+      "co" : 1,
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
@@ -27,9 +27,9 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/_assets\/custom-min.js",
-      "oF" : 0,
-      "sC" : 3,
+      "oAP" : "\/dist\/js\/custom-min.js",
+      "oF" : 2,
+      "sC" : 0,
       "tS" : 0
     },
     "\/.gitignore" : {
