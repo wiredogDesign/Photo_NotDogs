@@ -1,6 +1,6 @@
 var trigger = document.querySelector('header');
 var headerImg = document.querySelector('header img');
-var imageCount = document.querySelectorAll('.thumbnail-trigger').length-1;
+var imageCount = document.querySelectorAll('.thumbnail-trigger').length;
 
 // set & update image count
 document.querySelector('h1').setAttribute('data-image-counter', imageCount);
@@ -21,3 +21,8 @@ getCheckedValue = () => {
 var currentBackground = localStorage.getItem('body');
 document.body.style.backgroundColor = currentBackground;
 document.querySelector('form').addEventListener('change', getCheckedValue); // for some reason this statement was before the function
+
+// get calculated image sizes
+// var images = document.querySelectorAll('.gallery img').forEach(function(imageSize) {
+//     console.log(imageSize.width, imageSize.height);
+// });
