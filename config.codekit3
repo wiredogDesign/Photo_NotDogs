@@ -10,7 +10,7 @@
   "creatorBuild" : "34510",
   "files" : {
     "\/_assets\/custom.css" : {
-      "aP" : 1,
+      "aP" : 0,
       "bl" : 0,
       "ci" : 0,
       "co" : 1,
@@ -108,6 +108,16 @@
       "oA" : 0,
       "oAP" : "\/dist\/fonts\/typed.woff2",
       "oF" : 0
+    },
+    "\/dist\/gfx\/aperture_edited.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/gfx\/aperture_edited.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/dist\/gfx\/apple-touch-icon.png" : {
       "ft" : 32768,

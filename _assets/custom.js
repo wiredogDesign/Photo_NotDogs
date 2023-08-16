@@ -22,7 +22,7 @@ var currentBackground = localStorage.getItem('body');
 document.body.style.backgroundColor = currentBackground;
 document.querySelector('form').addEventListener('change', getCheckedValue); // for some reason this statement was before the function
 
-// get calculated image sizes
-// var images = document.querySelectorAll('.gallery img').forEach(function(imageSize) {
-//     console.log(imageSize.width, imageSize.height);
-// });
+// get calculated image widths - only works for images that have src attribute (not yall's data-src)
+var images = document.querySelectorAll('.gallery img').forEach(function(imageSize) {
+    // console.log(imageSize.width);
+});

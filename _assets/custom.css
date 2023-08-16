@@ -113,7 +113,7 @@ input {
 	border-radius: 17%;
     background-color: var(--red);
 	appearance: none;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     cursor: pointer;
     transition: border-radius .4s cubic-bezier(.68,-0.55,.54,2.67);
 }
