@@ -148,6 +148,7 @@ section {
     flex: 1 0 auto;
     position: relative;
     max-width: 50%;
+    min-width: 120px;
     height: 20.3vw;
     border-radius: .6vw;
     overflow: hidden;

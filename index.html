@@ -11,7 +11,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <script src="dist/js/yall-min.js"></script>
         <link rel="manifest" href="manifest.webmanifest" />
-        <script> // https://github.com/malchata/yall.js
+        <!-- https://github.com/malchata/yall.js -->
+        <script> 
             document.addEventListener("DOMContentLoaded", () => {
                 yall({
                     observeRootSelector: ".gallery",
@@ -45,6 +46,7 @@
                 
                 <h2>performance</h2>
 
+                <!-- first six images are not lazy-loaded -->
                 <a class="thumbnail-trigger" href="dist/img/large/dscf5448.jpg" 
                 data-glightbox="title: SAW band; description: hidden gardens, glasgow 2015">
                     <img  
@@ -119,7 +121,9 @@
                 <a class="thumbnail-trigger" href="dist/img/large/dscf5555.jpg" 
                 data-glightbox="title: high performance; description: great scottish run, glasgow 2015">
                     <img  
-                    src="dist/img/small/dscf5555.jpg" 
+                    class="lazy"
+                    src="dist/gfx/placeholder.jpg" 
+                    data-src="dist/img/small/dscf5555.jpg" 
                     alt="A blurred runner passes two bystanders holding signs with jokey slogans - High Performance, Great Scottish Run, Glasgow 2015" 
                     title="" />
                     <div aria-hidden="true">
@@ -130,8 +134,10 @@
 
                 <a class="thumbnail-trigger" href="dist/img/large/dscf7441.jpg" 
                 data-glightbox="title: aerial influencer; description: aerial edge, queens park, glasgow 2017">
-                    <img  
-                    src="dist/img/small/dscf7441.jpg" 
+                    <img 
+                    class="lazy" 
+                    src="dist/gfx/placeholder.jpg" 
+                    data-src="dist/img/small/dscf7441.jpg" 
                     alt="image test info" 
                     title="" />
                     <div aria-hidden="true">
@@ -144,7 +150,7 @@
                 data-glightbox="title: granny green; description: hidden gardens, glasgow 2015">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf5241.jpg" 
                     alt="image test info" 
                     title="" />
@@ -158,7 +164,7 @@
                 data-glightbox="title: alex south - the one ensemble; description: glad cafe, glasgow 2012">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf1805.jpg" 
                     alt="image test info" 
                     title="" />
@@ -172,7 +178,7 @@
                 data-glightbox="title: claire cunningham; description: ménage à trois, glasgow 2012">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/claire_cunningham_poster.jpg" 
                     alt="image test info" 
                     title="" />
@@ -186,7 +192,7 @@
                 data-glightbox="title: wolves in the walls / little otik; description: nts, glasgow 20017">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf7714.jpg" 
                     alt="image test info" 
                     title="" />
@@ -200,7 +206,7 @@
                 data-glightbox="title: thomas truax & hornicator; description: kelvingrove gallery, glasgow 2012">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/thomas_truax.jpg" 
                     alt="image test info" 
                     title="" />
@@ -214,7 +220,7 @@
                 data-glightbox="title: swimming on empty; description: govanhill baths, glasgow 2011">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/swimmers.jpg" 
                     alt="image test info" 
                     title="" />
@@ -228,7 +234,7 @@
                 data-glightbox="title: preparation for dance; description: scottish ballet, glasgow 2009">
                     <img 
                     class="lazy img-tr" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/tramway.jpg" 
                     alt="image test info" 
                     title="" />
@@ -242,7 +248,7 @@
                 data-glightbox="title: discovered; description: some great reward, glasgow 2022">
                     <img 
                     class="lazy img-tr" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf9954.jpg" 
                     alt="image test info" 
                     title="" />
@@ -256,7 +262,7 @@
                 data-glightbox="title: despite the weather; description: big in falkirk, falkirk 2008">
                     <img 
                     class="lazy img-tr" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf0683.jpg" 
                     alt="image test info" 
                     title="" />
@@ -270,7 +276,7 @@
                 data-glightbox="title: precarious balance; description: kelvingrove, glasgow 2012">
                     <img 
                     class="lazy img-tr" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/balance.jpg" 
                     alt="image test info"
                     title="" />
@@ -284,7 +290,7 @@
                 data-glightbox="title: marcus mackay & kathryn joseph; description: mix the city, glasgow 2018">
                     <img 
                     class="lazy img-tr" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf8345.jpg" 
                     alt="image test info" title="" />
                     <div aria-hidden="true">
@@ -297,7 +303,7 @@
                 data-glightbox="title: were-women; description: merchant city festival, glasgow 2017">
                     <img 
                     class="lazy img-tr" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf7657.jpg" 
                     alt="image test info" title="" />
                     <div aria-hidden="true">
@@ -316,7 +322,7 @@
                 data-glightbox="title: loss of former friends; description: glasgow 2016">
                     <img 
                     class="lazy img-br" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/prospecthill.jpg" 
                     alt="image test info" title="" />
                     <div aria-hidden="true">
@@ -329,7 +335,7 @@
                 data-glightbox="title: demolition or creation; description: glasgow 2012">
                     <img 
                     class="lazy img-br" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/grossetete.jpg" 
                     alt="image test info" title="" />
                     <div aria-hidden="true">
@@ -342,7 +348,7 @@
                 data-glightbox="title: self-titled; description: glasgow 2013">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/the_end.jpg"
                     alt="image test info"
                     title="" />
@@ -356,7 +362,7 @@
                 data-glightbox="title: safe for now; description: glasgow 2013">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/the_safety.jpg" 
                     alt="image test info" 
                     title="" />
@@ -370,7 +376,7 @@
                 data-glightbox="title: was the future; description: glasgow 2008">
                     <img 
                     class="lazy img-br" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/was_the_future.jpg" 
                     alt="image test info" title="" />
                     <div aria-hidden="true">
@@ -383,7 +389,7 @@
                 data-glightbox="title: triptych; description: glasgow 2008">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/demolition_triptych.jpg" 
                     alt="image test info" 
                     title="" />
@@ -403,7 +409,7 @@
                 data-glightbox="title: the emperor's new clothes; description: greenwich 2023">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf0132.jpg" 
                     alt="Statue of George 2nd, with hands clasped together, covered with tarpaulin, tape and rope."
                     title="" />
@@ -417,7 +423,7 @@
                 data-glightbox="title: untitled outlook; description: lisbon 2018">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf8072.jpg" 
                     alt="image test info"
                     title="" />
@@ -431,7 +437,7 @@
                 data-glightbox="title: vehicle may fail to start in cold weather; description: glasgow 2022">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf9986.jpg" 
                     alt="A childs colourful snow-covered toy car sits in front of a brightly painted wall" 
                     title="" />
@@ -445,7 +451,7 @@
                 data-glightbox="title: we want to stay together ...; description: glasgow 2019">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/better_apart.jpg" 
                     alt="image test info" 
                     title="" />
@@ -459,7 +465,7 @@
                 data-glightbox="title: ... but are we better apart ?; description: glasgow 2015">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/better_together.jpg" 
                     alt="image test info" 
                     title="" />
@@ -472,7 +478,7 @@
                 <a class="thumbnail-trigger" href="dist/img/large/heartstrings.jpg"
                 data-glightbox="title: as far as it can be stretched; description: glasgow 2012">
                     <img 
-                    class="lazy" src="dist/gfx/placeholder.png" 
+                    class="lazy" src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/heartstrings.jpg" 
                     alt="image test info" 
                     title="" />
@@ -486,7 +492,7 @@
                 data-glightbox="title: is our memory of the old place wrong ?; description: GOMA, glasgow 2018">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf8197.jpg" 
                     alt="image test info" 
                     title="" />
@@ -500,7 +506,7 @@
                 data-glightbox="title: the third horseman has left the building; description: the lighthouse, glasgow 2008">
                     <img 
                     class="lazy img-tr" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/fast_exit.jpg" 
                     alt="Four red plastic chairs look out over a Glasgow skyline. One of the chairs has been knocked over." title="" />
                     <div aria-hidden="true">
@@ -513,7 +519,7 @@
                 data-glightbox="title: pun avoided; description: berlin 2007">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf0194.jpg" 
                     alt="image test info" 
                     title="" />
@@ -527,7 +533,7 @@
                 data-glightbox="title: reunification; description: berlin 2011">
                     <img 
                     class="lazy"
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf2457.jpg" 
                     alt="image test info" 
                     title="" />
@@ -547,7 +553,7 @@
                 data-glightbox="title: aerial confrontation; description: glasgow 2023">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf0224.jpg"
                     alt="Cirrus clouds come together like 2 large birds." 
                     title="" />
@@ -561,7 +567,7 @@
                 data-glightbox="title: tree rabbit; description: glasgow 2013">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf3405.jpg"
                     alt="image test info" 
                     title="" />
@@ -575,7 +581,7 @@
                 data-glightbox="title: selfie; description: glasgow 2012">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/lcd_2909.jpg"
                     alt="image test info" 
                     title="" />
@@ -589,7 +595,7 @@
                 data-glightbox="title: bubbles are important; description: kelvingrove, glasgow 2012">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf0046.jpg" 
                     alt="image test info" 
                     title="" />
@@ -603,7 +609,7 @@
                 data-glightbox="title: call & response; description: reid building, gsa, glasgow 2014">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf3791.jpg" 
                     alt="image test info" 
                     title="" />
@@ -617,7 +623,7 @@
                 data-glightbox="title: alexanderplatz; description: berlin 2010">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf1388.jpg" 
                     alt="image test info" 
                     title="" />
@@ -631,7 +637,7 @@
                 data-glightbox="title: cylindrical expressions; description: berlin 2007">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf0257.jpg" 
                     alt="image test info" 
                     title="" />
@@ -645,7 +651,7 @@
                 data-glightbox="title: gatekeepers; description: maryhill burgh halls, glasgow 2021">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf9690.jpg" 
                     alt="image test info" 
                     title="" />
@@ -659,7 +665,7 @@
                 data-glightbox="title: balloon animal; description: glasgow 2011">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/disney.jpg" 
                     alt="image test info" 
                     title="" />
@@ -673,7 +679,7 @@
                 data-glightbox="title: shirts of st george; description: glasgow 2008">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf0655.jpg" 
                     alt="image test info" 
                     title="" />
@@ -687,7 +693,7 @@
                 data-glightbox="title: modern policing; description: glasgow 2008">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf0708.jpg" 
                     alt="image test info" 
                     title="" />
@@ -701,7 +707,7 @@
                 data-glightbox="title: sometimes i hardly know you; description: govanhill, glasgow 2012">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/tenement.jpg" 
                     alt="image test info" 
                     title="" />
@@ -715,7 +721,7 @@
                 data-glightbox="title: untitled leg/building mashup; description: glasgow 2013">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf3150-2.jpg" 
                     alt="image test info" 
                     title="" />
@@ -729,7 +735,7 @@
                 data-glightbox="title: untitled persons with dishes; description: ubiquitous chip, glasgow 2013">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf3301.jpg" 
                     alt="image test info" 
                     title="" />
@@ -743,7 +749,7 @@
                 data-glightbox="title: consider the birds; description: glasgow 2013">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf3672.jpg" 
                     alt="image test info" 
                     title="" />
@@ -757,7 +763,7 @@
                 data-glightbox="title: barn swallow; description: pollok park, glasgow 2016">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf6124.jpg" 
                     alt="image test info" 
                     title="" />
@@ -771,7 +777,7 @@
                 data-glightbox="title: organism; description: glasgow 2016">
                     <img 
                     class="lazy" 
-                    src="dist/gfx/placeholder.png" 
+                    src="dist/gfx/placeholder.jpg" 
                     data-src="dist/img/small/dscf6675.jpg" 
                     alt="image test info" 
                     title="" />
