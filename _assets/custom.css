@@ -58,7 +58,7 @@ header {
     background-color: var(--red);
 }
 
-header > h1 {
+header h1 {
     position: absolute;
     top: 0.4em;
     right: 0.3em;
@@ -70,14 +70,14 @@ header > h1 {
     color: var(--limpid);
 }
 
-header > h1 span {
+header h1 span {
     font-size: 140%;
     line-height: 0;
     font-weight: bold;
     color: var(--red);
 }
 
-header > h1::before {
+header h1::before {
     content: attr(data-image-counter);
     font-size: inherit;
     color: var(--limpid);
@@ -156,7 +156,7 @@ section {
     color: inherit;
 }
 
-.thumbnail-trigger > img {
+.thumbnail-trigger img {
     /* needs min-width to work correctly with webkit */
     min-width: 100%;
     height: 100%;
@@ -170,7 +170,7 @@ section {
     filter: saturate(1);
 }
 
-.thumbnail-trigger.last-image > img {
+.thumbnail-trigger.last-image img {
     object-position: bottom right;
 }
 
@@ -247,7 +247,7 @@ footer {
         font-size: 1.3em;
     }
 
-    header > h1 span {
+    header h1 span {
         font-size: inherit;
         font-weight: bold;
         color: var(--red);
@@ -257,11 +257,11 @@ footer {
         max-width: 100%;
     }
 
-    .thumbnail-trigger.last-image > img {
+    .thumbnail-trigger.last-image img {
         object-position: bottom right;
     }
 
-    footer > h3 {
+    footer h3 {
         font-size: .8rem;
     }
 }
