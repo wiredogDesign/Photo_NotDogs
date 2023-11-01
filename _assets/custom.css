@@ -166,7 +166,7 @@ section {
     transition: filter .2s linear;
 }
 
-.thumbnail-trigger img:hover {
+.thumbnail-trigger:hover img {
     filter: saturate(1);
 }
 
@@ -176,18 +176,37 @@ section {
 
 .thumbnail-trigger div {
     position: absolute;
-    bottom: -10rem;
+    bottom: -100%;
     width: 100%;
-    margin: -5px 0 1px;
+    height: 100%;
+    /* margin: -5px 0 1px; */
     padding: 0.4em;
     font-weight: 300;
     background: var(--limpid);
-    transition: bottom 0.4s ease-in-out;
+    transition: bottom 0.2s ease-in-out;
     backdrop-filter: blur(3px);
 }
 
+.thumbnail-trigger:hover div h4,
+.thumbnail-trigger:hover div p {
+    opacity: 1;
+}
+
+.thumbnail-trigger div h4, 
+.thumbnail-trigger div p {
+	opacity: 0;
+}
+
+.thumbnail-trigger div h4 {
+    transition: opacity 1.7s ease;
+}
+
+.thumbnail-trigger div p {
+    transition: opacity 1.7s ease;
+}
+
 .thumbnail-trigger:hover div {
-    bottom: -1px;
+    bottom: 0;
 }
 
 footer {
