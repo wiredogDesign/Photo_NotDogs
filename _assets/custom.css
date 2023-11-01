@@ -184,7 +184,8 @@ section {
     font-weight: 300;
     background: var(--limpid);
     transition: bottom 0.2s ease-in-out;
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 .thumbnail-trigger:hover div h4,
