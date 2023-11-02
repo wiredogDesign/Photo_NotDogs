@@ -64,7 +64,7 @@ header h1 {
     right: 0.3em;
     z-index: 1;
     font-family: "typewriter";
-    font-size: clamp(2em, 4em, 6vw);
+    font-size: clamp(1.5em,3.5em,7.6vw);
     text-align: right;
     line-height: 1;
     color: var(--limpid);
@@ -207,7 +207,7 @@ section {
 }
 
 .thumbnail-trigger:hover div {
-    bottom: 0;
+    bottom: -100%;
 }
 
 /* disables thumbnail info popup on hover */
