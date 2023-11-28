@@ -1,4 +1,7 @@
 :root {
+    overscroll-behavior: none;
+    /* https://css-irl.info/preventing-overscroll-bounce-with-css */
+
     --red:          hsl(348, 50%, 50%);
     --grey-mid:     hsl(0, 0%, 60%);
     --grey-dark:    hsl(0, 0%, 40%);
