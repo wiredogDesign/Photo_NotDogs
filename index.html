@@ -32,8 +32,10 @@
 
         <main aria-label="image gallery" class="gallery">
             <form aria-hidden="false" class="background-select">
-                <input aria-label="choose light background" type="radio" name="radiobtn" value="#EEEEEE" id="light">                
-                <input aria-label="choose dark background" type="radio" name="radiobtn" value="#2B1717" id="dark">
+                <input class="mobile-only" aria-label="choose light background" type="radio" name="radiobtn" value="#EEEEEE" id="light">
+                <label class="desktop-only" for="light">lightness</label>                
+                <input class="mobile-only" aria-label="choose dark background" type="radio" name="radiobtn" value="#2B1717" id="dark">
+                <label class="desktop-only" for="dark">darkness</label> 
             </form>
 
             <section title="various arts and performance works" class="performance">

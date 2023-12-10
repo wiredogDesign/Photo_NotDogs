@@ -122,6 +122,18 @@ input {
     transition: border-radius .4s cubic-bezier(.68,-0.55,.54,2.67);
 }
 
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    padding: .5rem;
+    background: var(--red);
+    color: white;
+    margin: 6px 0px 0px 6px;
+    display: inline-block;
+}
+
 input:hover {
     border-radius: 50%;
 }
@@ -291,6 +303,14 @@ footer {
     .thumbnail-trigger.last-image img {
         object-position: bottom right;
     }
+
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: inline-block;
+    }   
 
     footer h3 {
         font-size: .8rem;
