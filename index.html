@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>These.Photographs.Are.Equally.Not.Important</title>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'" />
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'" /> -->
         <link rel="stylesheet" href="dist/css/custom-min.css" />
         <link rel="stylesheet" href="dist/css/glightbox-min.css" />
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,7 +33,7 @@
         </header>
 
         <main aria-label="image gallery" class="gallery">
-            <form aria-hidden="false" class="background-select">
+            <form class="background-select">
                 <input class="mobile-only" aria-label="choose light background" type="radio" name="radiobtn" value="#EEEEEE" id="light">
                 <label class="desktop-only" for="light">lightness</label>                
                 <input class="mobile-only" aria-label="choose dark background" type="radio" name="radiobtn" value="#2B1717" id="dark">
@@ -44,22 +44,22 @@
                 
                 <h2>section 1</h2>
                 
-                <a class="thumbnail-trigger" href="https://[mv-upload-path]"
-                property="Image"
-                mv-upload-path="dist/img/large"
-                data-glightbox="title: [Heading]; description: [ImageDescription]">
-                    <img 
-                    mv-upload-path="dist/img/small"
-                    property="Image"
-                    src="dist/img/small" 
-                    loading="lazy"
-                    alt="[ImageDescription]" 
-                    title="" />
-                    <div aria-hidden="true">
-                        <h4 property="Heading"></h4>
-                        <p property="ImageDescription"></p>
+                <article class="article-cards" property="article_cards">
+                    <a href="dist/img/large/balance.jpg"
+                    property="image_large"
+                    mv-upload-path="dist/img/large">
+                    </a>
+                    <img
+                        mv-upload-path="dist/img/small"
+                        property="image_small"
+                        src="dist/img/small/balance.jpg"
+                        loading="lazy"
+                        alt="[image_description]" />
+                    <div class="blurb">
+                        <h4 property="heading">Test Header</h4>
+                        <p property="image_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum deleniti odit modi nulla sequi, atque vel perspiciatis, dolorem accusantium facere sit totam repellendus. Harum itaque voluptas veniam, voluptatibus vel blanditiis?</p>
                     </div>
-                </a>
+                </article>
             </section>
         </main>
 
