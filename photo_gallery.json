@@ -6,6 +6,16 @@
 			"image_description": "yes, yes, yes"
 		},
 		{
+			"image_small": "https://photo.wiredog.co.uk/dist/img/small/better_apart.jpg",
+			"heading": "better apart ?",
+			"image_description": "maybe"
+		},
+		{
+			"image_small": "https://photo.wiredog.co.uk/dist/img/small/better_together.jpg",
+			"heading": "better together ?",
+			"image_description": "yes"
+		},
+		{
 			"image_small": "https://photo.wiredog.co.uk/dist/img/small/disney.jpg",
 			"heading": "mouse",
 			"image_description": "balloons"
