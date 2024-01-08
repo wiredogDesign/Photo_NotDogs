@@ -103,18 +103,36 @@ header img {
 
 .background-select {
 	position: absolute;
-	top: 1.4rem;
+	top: 2px;
 	right: 0;
 }
 
 .background-select input {
-    appearance: none;
+    display: none;
 }
 
 .background-select label {
-    padding: 0.5rem;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     background: var(--red);
-    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--red);
+    background-size: 50%;
+    transition: background-size .4s ease-in-out;
+}
+
+.background-select label:hover {
+	background-size: 60%;
+}
+
+.background-select label[for="dark"] {
+    background-image: url('/dist/gfx/dark.svg');
+}
+
+.background-select label[for="light"] {
+    background-image: url('/dist/gfx/light.svg');
 }
 
 /* ------------------------------ */
@@ -134,18 +152,18 @@ section {
 .article-cards {
     display: flex;
     flex-direction: column;
-    flex: 1 1 31vw;
+    flex: 1 1 30vw;
+    justify-content: space-between;
     position: relative;
     max-width: 50%;
     min-width: 120px;
-    height: 30vw;
     overflow: hidden;
 }
 
 .article-cards img {
     /* needs min-width to work correctly with webkit */
     min-width: 100%;
-    height: 100%;
+    height: 30vw;
     object-fit: cover;
     filter: grayscale(1);
     transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -197,15 +215,6 @@ footer {
         gap: calc(var(--margins)*2);
     }
 
-    p {
-        display: none;
-    }
-
-    .article-cards { 
-        height: 30vw;
-        border-radius: 2vw;
-    }
-
     .glightbox-mobile .glightbox-container .gslide-description {
         /* max-height: 14vh !important; */
         bottom: 40px !important;
@@ -228,18 +237,14 @@ footer {
 
     .article-cards {
         max-width: 100%;
-    }
-
-    .desktop-only {
-        display: none;
-    }
-    
-    .mobile-only {
-        display: inline-block;
-    }   
+    } 
 
     footer h3 {
         font-size: .8rem;
+    }
+
+    .mv-bar.mv-ui:not(.mv-fixed) {
+        display: none;
     }
 }
 
@@ -257,4 +262,18 @@ button[mv-action="add(card_container)"] {
 	border-radius: 0 !important;
 	position: absolute;
 	top: 0;
+}
+
+.mv-avatar {
+	display: none !important;
+}
+
+/* tinymce specific */
+
+span.tinymce {
+    margin-top: 0.3em;
+	padding: .2em;
+	background: var(--red);
+	color: white;
+
 }

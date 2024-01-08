@@ -11,7 +11,6 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="manifest" href="manifest.webmanifest" />
         <link rel="stylesheet" href="dist/css/mavo-min.css">
-        <script src="dist/js/mavo-min.js"></script>
     </head>
     <body 
         mv-app="photo_gallery" 
@@ -32,10 +31,10 @@
 
         <main aria-label="image gallery" class="gallery">
             <form class="background-select">
-                <input class="mobile-only" aria-label="choose light background" type="radio" name="radiobtn" value="#EEEEEE" id="light">
-                <label class="desktop-only" for="light">lightness</label>                
-                <input class="mobile-only" aria-label="choose dark background" type="radio" name="radiobtn" value="#2B1717" id="dark">
-                <label class="desktop-only" for="dark">darkness</label> 
+                <input aria-label="choose light background" type="radio" name="radiobtn" value="#EEEEEE" id="light">
+                <label for="light"></label>                
+                <input aria-label="choose dark background" type="radio" name="radiobtn" value="#2B1717" id="dark">
+                <label for="dark"></label> 
             </form>
 
             <section 
@@ -48,11 +47,12 @@
                     class="article-cards" 
                     property="article_cards" 
                     mv-list-item>
-                    <a href=""
+                    <a class="image-large" href=""
                         property="image_large"
                         mv-upload-path="dist/img/large">
                     </a>
                     <img
+                    class="image-small"
                         mv-upload-path="dist/img/small"
                         property="image_small"
                         src=""
@@ -61,6 +61,7 @@
                     <div class="blurb">
                         <h4 property="heading">Test Header</h4>
                         <p property="image_description">Test Blurb</p>
+                        <span property="image_link" class="tinymce" mv-tinymce-toolbar="link">large image</span>
                     </div>
                 </article>
             </section>
@@ -78,13 +79,16 @@
                 touchNavigation: true,
                 keyboardNavigation: true,
                 loop: true,
-                selector: '.gallery a',
+                selector: '.blurb span',
                 closeButton: true,
                 zoomable: true,
                 openEffect: 'fade',
                 autoplayVideos: false
             });
         </script>
+
+        <script src="dist/js/mavo-min.js"></script>
+        <script src="dist/js/tinymce-min.js"></script>
 
         <script src="dist/js/custom-min.js" defer></script>
         <!-- <script src="dist/js/click-spark-min.js"></script> -->

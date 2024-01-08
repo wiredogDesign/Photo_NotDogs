@@ -155,6 +155,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/dist\/gfx\/dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/gfx\/dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/dist\/gfx\/headerimage_large.avif" : {
       "cB" : 0,
       "ft" : 8192,
@@ -186,6 +196,16 @@
       "opt" : 0,
       "ou" : "lpckwebp-default",
       "rq" : 75
+    },
+    "\/dist\/gfx\/light.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/gfx\/light.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/dist\/gfx\/logo_animated.svg" : {
       "ft" : 2097152,
@@ -2156,6 +2176,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/dist\/js\/mavo-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dist\/js\/tinymce-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/dist\/js\/tinymce-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
