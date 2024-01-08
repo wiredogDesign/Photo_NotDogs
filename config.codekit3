@@ -2208,6 +2208,14 @@
       "oAP" : "\/manifest.webmanifest",
       "oF" : 1
     },
+    "\/photo_gallery.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/photo_gallery-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/robots.txt" : {
       "cB" : 0,
       "ft" : 8192,
