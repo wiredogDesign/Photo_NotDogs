@@ -1,6 +1,6 @@
 var trigger = document.querySelector('header');
 var headerImg = document.querySelector('header img');
-var imageCount = document.querySelectorAll('.thumbnail-trigger').length;
+var imageCount = document.querySelectorAll('article').length;
 
 // set & update image count
 document.querySelector('h1').setAttribute('data-image-counter', imageCount);

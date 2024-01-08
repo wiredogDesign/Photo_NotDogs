@@ -11,14 +11,12 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="manifest" href="manifest.webmanifest" />
         <link rel="stylesheet" href="dist/css/mavo-min.css">
-        <style>
-            .thumbnail-trigger {
-                min-width: 150px;
-            }
-        </style>
         <script src="dist/js/mavo-min.js"></script>
     </head>
-    <body mv-app="photo_gallery" mv-storage="local">
+    <body 
+        mv-app="photo_gallery" 
+        mv-storage="https://github.com/wiredogDesign/Photo_NotDogs/blob/mavo"
+        mv-permissions="read save edit add delete login logout">
         <header aria-hidden="true">
             <h1>&nbsp; images of<br><span>no</span> consequence</h1>
             <picture>
@@ -40,24 +38,29 @@
                 <label class="desktop-only" for="dark">darkness</label> 
             </form>
 
-            <section title="section 1" class="">
+            <section 
+                property="card_container" 
+                class="" mv-list>
                 
                 <h2>section 1</h2>
                 
-                <article class="article-cards" property="article_cards">
-                    <a href="dist/img/large/balance.jpg"
-                    property="image_large"
-                    mv-upload-path="dist/img/large">
+                <article 
+                    class="article-cards" 
+                    property="article_cards" 
+                    mv-list-item>
+                    <a href=""
+                        property="image_large"
+                        mv-upload-path="dist/img/large">
                     </a>
                     <img
                         mv-upload-path="dist/img/small"
                         property="image_small"
-                        src="dist/img/small/balance.jpg"
+                        src=""
                         loading="lazy"
                         alt="[image_description]" />
                     <div class="blurb">
                         <h4 property="heading">Test Header</h4>
-                        <p property="image_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum deleniti odit modi nulla sequi, atque vel perspiciatis, dolorem accusantium facere sit totam repellendus. Harum itaque voluptas veniam, voluptatibus vel blanditiis?</p>
+                        <p property="image_description">Test Blurb</p>
                     </div>
                 </article>
             </section>
@@ -83,7 +86,7 @@
             });
         </script>
 
-        <script src="dist/js/custom-min.js"></script>
+        <script src="dist/js/custom-min.js" defer></script>
         <!-- <script src="dist/js/click-spark-min.js"></script> -->
         <!-- <click-spark></click-spark> -->
     </body>

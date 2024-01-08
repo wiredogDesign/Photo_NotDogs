@@ -103,8 +103,18 @@ header img {
 
 .background-select {
 	position: absolute;
-	top: 0.5em;
+	top: 1.4rem;
 	right: 0;
+}
+
+.background-select input {
+    appearance: none;
+}
+
+.background-select label {
+    padding: 0.5rem;
+    background: var(--red);
+    color: white;
 }
 
 /* ------------------------------ */
@@ -124,10 +134,12 @@ section {
 .article-cards {
     display: flex;
     flex-direction: column;
+    flex: 1 1 31vw;
     position: relative;
     max-width: 50%;
     min-width: 120px;
-    height: 33.3vh;
+    height: 30vw;
+    overflow: hidden;
 }
 
 .article-cards img {
@@ -135,6 +147,13 @@ section {
     min-width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: grayscale(1);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.article-cards:hover img {
+    filter: grayscale(0);
+    transform: scale(1.04);
 }
 
 .article-cards div {
@@ -222,4 +241,20 @@ footer {
     footer h3 {
         font-size: .8rem;
     }
+}
+
+/* mavo specific  */
+
+button[mv-action="add(card_container)"] {
+    display: none !important;
+}
+
+.mv-popup {
+    font: inherit !important;
+}
+
+.mv-bar.mv-ui:not(.mv-fixed) {
+	border-radius: 0 !important;
+	position: absolute;
+	top: 0;
 }
