@@ -102,9 +102,8 @@ header img {
 /* the background colour selector */
 
 .background-select {
-	position: absolute;
-	top: 2px;
-	right: 0;
+	margin-top: 1vh;
+    text-align: right;
 }
 
 .background-select input {
@@ -157,7 +156,6 @@ section {
     position: relative;
     max-width: 50%;
     min-width: 120px;
-    overflow: hidden;
 }
 
 .article-cards img {
@@ -259,21 +257,32 @@ button[mv-action="add(card_container)"] {
 }
 
 .mv-bar.mv-ui:not(.mv-fixed) {
-	border-radius: 0 !important;
-	position: absolute;
+    position: absolute;
 	top: 0;
+	border-radius: 0 !important;
+    opacity: 0.2;
+}
+
+.mv-item-bar.mv-ui {
+    bottom: 88% !important;
+    left: 1% !important;
+}
+
+div.mv-bar.mv-ui:has(div.mv-status) {
+    opacity: 1;
 }
 
 .mv-avatar {
 	display: none !important;
 }
 
+
 /* tinymce specific */
 
 span.tinymce {
-    margin-top: 0.3em;
-	padding: .2em;
+	margin-top: .3em;
+	padding: 0.2em 0.4em;
 	background: var(--red);
-	color: white;
-
+	color: #fff;
+	display: inline-block;
 }
