@@ -21,15 +21,15 @@
       "tS" : 0
     },
     "\/_assets\/custom.css" : {
-      "aP" : 0,
+      "aP" : 1,
       "bl" : 0,
       "ci" : 0,
-      "co" : 1,
+      "co" : 0,
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/dist\/css\/custom-min.css",
-      "oF" : 2,
+      "oAP" : "\/_assets\/custom-min.css",
+      "oF" : 0,
       "pg" : 0
     },
     "\/_assets\/custom.js" : {
@@ -38,9 +38,9 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/dist\/js\/custom-min.js",
-      "oF" : 2,
-      "sC" : 0,
+      "oAP" : "\/_assets\/custom-min.js",
+      "oF" : 0,
+      "sC" : 3,
       "tS" : 0
     },
     "\/.gitignore" : {
@@ -135,9 +135,9 @@
     "\/dist\/gfx\/aperture_edited.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 0,
+      "oA" : 2,
       "oAP" : "\/dist\/gfx\/aperture_edited.svg",
-      "oF" : 1,
+      "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -151,7 +151,7 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
-      "ou" : "lpckwebp-default",
+      "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
@@ -2251,9 +2251,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/robots.txt",
-      "oF" : 1
+      "oF" : 0
     },
     "\/test_theme_switcher.html" : {
       "cB" : 0,
@@ -2571,7 +2571,7 @@
     "browserslistString" : ">0.2%, last 2 versions, Firefox ESR, not dead",
     "buildEnvironment" : 0,
     "buildFolderActive" : 0,
-    "buildFolderName" : "dist",
+    "buildFolderName" : "build",
     "cleanBuild" : 1,
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
