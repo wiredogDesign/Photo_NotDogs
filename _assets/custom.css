@@ -102,48 +102,36 @@ header img {
 /* the background colour selector */
 
 .background-select {
-	position: absolute;
-	top: 0.5em;
-	right: 0;
+	margin-top: 1vh;
+    text-align: right;
 }
 
-input {
-	width: 0.6em;
-	height: 0.6em;
-    margin-left: 0.5em;
-	border: 0.7em solid currentColor;
-	padding: 0.5em;
-	border-radius: 17%;
-    background-color: var(--red);
-    -webkit-appearance: none;
-	appearance: none;
-    /* -webkit-appearance: none; */
-    cursor: pointer;
-    transition: border-radius .4s cubic-bezier(.68,-0.55,.54,2.67);
-}
-
-.mobile-only {
+.background-select input {
     display: none;
 }
 
-.desktop-only {
-    padding: .5rem;
-    background: var(--red);
-    color: white;
-    margin: 6px 0px 0px 6px;
+.background-select label {
     display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--red);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--red);
+    background-size: 50%;
+    transition: background-size .4s ease-in-out;
 }
 
-input:hover {
-    border-radius: 50%;
+.background-select label:hover {
+	background-size: 60%;
 }
 
-input:nth-of-type(1) {
-	border-color: white;
+.background-select label[for="dark"] {
+    background-image: url('/dist/gfx/dark.svg');
 }
 
-input:nth-of-type(2) {
-	border-color: black;
+.background-select label[for="light"] {
+    background-image: url('/dist/gfx/light.svg');
 }
 
 /* ------------------------------ */
