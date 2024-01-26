@@ -1,9 +1,16 @@
 var trigger = document.querySelector('header');
 var headerImg = document.querySelector('header img');
-var imageCount = document.querySelectorAll('article').length;
+// var imageCount = document.querySelectorAll('article').length;
 
 // set & update image count
-document.querySelector('h1').setAttribute('data-image-counter', imageCount);
+
+// updateImageCount = () => {
+//     var imageCount = document.querySelectorAll('article').length;
+//     document.querySelector('h1').setAttribute('data-image-counter', imageCount);
+// }
+// document.addEventListener('onload', updateImageCount)
+
+
 
 // show/hide header image
 toggleClass = () => {
