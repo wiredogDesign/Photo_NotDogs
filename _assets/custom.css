@@ -59,7 +59,7 @@ h4 {
 header {
     position: relative;
     overflow: hidden;
-    background-color: var(--red);
+    background-image: radial-gradient(circle at 22% 59%,var(--limpid) 18%,var(--red) 19.3%);
     cursor: pointer;
 }
 
@@ -69,14 +69,13 @@ header h1 {
     right: 0.3em;
     z-index: 1;
     font-family: "typewriter";
-    font-size: clamp(1.5em,3.5em,7.6vw);
+    font-size: clamp(1.5em,3.1em,7.6vw);
     text-align: right;
     line-height: 1;
     color: var(--limpid);
 }
 
 header h1 span {
-    font-size: 140%;
     line-height: 0;
     font-weight: bold;
     color: var(--red);
