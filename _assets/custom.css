@@ -2,7 +2,7 @@
     overscroll-behavior: none;
     /* https://css-irl.info/preventing-overscroll-bounce-with-css */
 
-    --red:          hsl(348, 50%, 50%);
+    --red:          hsl(334, 17%, 42%);
     --grey-mid:     hsl(0, 0%, 60%);
     --grey-dark:    hsl(0, 0%, 40%);
     --black:        hsl(0, 30%, 13%);
@@ -25,7 +25,7 @@
 
 body {
     width: 100vw;
-    max-width: 900px;
+    max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 var(--margins);
@@ -47,7 +47,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 0.3rem;
     padding: 0.6em 0 0.2em;
-    border-bottom: 0.1em solid var(--red);
+    /* border-bottom: 0.1em solid var(--red); */
     font-weight: 500;
 }
 
@@ -90,7 +90,7 @@ header h1::before {
 header img {
     display: block;
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     clip-path: circle(19% at 22% 59%);
     transition: clip-path 0.7s cubic-bezier(.48,-0.32,.27,1.55);
     cursor: pointer;
@@ -103,10 +103,10 @@ header img {
 /* the background colour selector */
 
 .background-select {
-    position: relative;
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
     z-index: 2;
-	margin-top: 1vh;
-    text-align: right;
 }
 
 .background-select input {
@@ -115,8 +115,10 @@ header img {
 
 .background-select label {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    margin-left: 0.6em;
+    border-radius: 50%;
     background: var(--red);
     background-repeat: no-repeat;
     background-position: center;
@@ -143,7 +145,7 @@ header img {
 main {
     position: relative;
     min-height: 100vh;
-    margin-top: -3rem;
+    margin-top: 1.5rem;
 }
 
 section {
@@ -257,11 +259,11 @@ footer {
     }
 
     .background-select {
-        padding-right: 0.2rem;
+        margin-bottom: -5px;
     }
 
     main {
-        margin: -2.8rem 0.2rem;
+        margin: 0 0.2rem;
         gap: calc(var(--margins)*2);
     }
 
