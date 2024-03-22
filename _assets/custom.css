@@ -151,12 +151,13 @@ main {
 section {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
     gap: var(--margins);
     margin: var(--margins) 0;
 }
 
 .thumbnail-trigger {
-    flex: 1 0 auto;
+    flex: 0 1 auto;
     position: relative;
     max-width: 50%;
     min-width: 120px;
@@ -288,6 +289,14 @@ footer {
 
     main:after {
         font-size: 1.3em;
+    }
+
+    section {
+        gap: calc(var(--margins) *3);
+    }
+
+    section h2 {
+        text-align: center;
     }
 
     header h1 span {
