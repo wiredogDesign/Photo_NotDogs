@@ -24,3 +24,6 @@ Disallow: /
 
 User-agent: Bytespider
 Disallow: /
+
+User-agent: Applebot
+Disallow: /
