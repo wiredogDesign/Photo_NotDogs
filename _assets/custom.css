@@ -3,6 +3,7 @@
     /* https://css-irl.info/preventing-overscroll-bounce-with-css */
 
     --red:          hsl(334, 17%, 42%);
+    --grey-light:   hsl(0, 0%, 78%);
     --grey-mid:     hsl(0, 0%, 60%);
     --grey-dark:    hsl(0, 0%, 40%);
     --black:        hsl(0, 30%, 13%);
@@ -46,9 +47,14 @@ h2 {
     color: var(--red);
     margin-top: 0;
     margin-bottom: 0.3rem;
-    padding: 0.6em 0 0.2em;
+    padding: 0.3em 0 .2em 0.5em;
     /* border-bottom: 0.1em solid var(--red); */
     font-weight: 500;
+    font-size: 200%;
+}
+
+h2::after {
+	content: '↴';
 }
 
 h4 {
@@ -146,6 +152,7 @@ main {
     position: relative;
     min-height: 100vh;
     margin-top: 1.5rem;
+    background: var(--grey-light);
 }
 
 section {
