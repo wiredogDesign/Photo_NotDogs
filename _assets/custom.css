@@ -53,10 +53,6 @@ h2 {
     font-size: 200%;
 }
 
-h2::after {
-	content: '↴';
-}
-
 h4 {
     font-weight: 600;
     color: var(--red);
@@ -161,6 +157,8 @@ section {
     justify-content: space-evenly;
     gap: var(--margins);
     margin: var(--margins) 0;
+    padding: var(--margins);
+    border: 1px dashed var(--grey-mid);
 }
 
 .thumbnail-trigger {
