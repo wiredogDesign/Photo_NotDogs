@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" width="400px" height="400px">
+  <defs>
+    <filter id="roughpaper" primitiveUnits="objectBoundingBox">
+      <feTurbulence result="noise" baseFrequency="0.04" numOctaves="5" type="fractalNoise" seed="13"/>
+      <feDiffuseLighting in="noise" surfaceScale="1.2" result="diffuse-lighting-0" diffuseConstant="1" style="lighting-color: rgb(255, 252, 222);">
+        <feDistantLight azimuth="57" elevation="60"/>
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+  <rect width="400" height="400" style="fill: rgb(255, 255, 255); filter: url(#roughpaper)" id="paper"/>
+</svg>
